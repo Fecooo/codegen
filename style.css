@@ -1,0 +1,22 @@
+body {
+    background-color: wheat;
+}
+p {
+    text-align: center;
+}
+button {
+    text-align: center;
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 250px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    transition-duration: 0.75s;
+}
+button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
