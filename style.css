@@ -20,3 +20,18 @@ button:hover {
     color: black;
     cursor: pointer;
 }
+#focim, #info {
+    text-align: center;
+}
+
+#tablazat{
+    /*text-align: center;
+    display: block;
+    margin: auto;
+    padding: 0;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.sor {
+    text-align: center;
+}
