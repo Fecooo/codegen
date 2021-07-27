@@ -8,6 +8,7 @@ p {
     text-align: center;
 }
 button {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     display: block;
     margin: auto;
