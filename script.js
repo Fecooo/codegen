@@ -19,10 +19,10 @@ function generate() {
 				let randomSzam = Math.floor(Math.random() * szamok.length);
 				resz += szamok[randomSzam];
 			}
-		};
-	
+		}
+		
 		document.getElementById("kodok").innerHTML += resz + "<br>";
-	}
+	}	
 }
 
 /*for (let i = 0; i < 500; i++) {
@@ -40,6 +40,15 @@ function generate() {
 
     document.getElementById("kodok").innerHTML += resz + tores;
 }*/
+function display() {
+	var codes = document.getElementById('kodok');
+
+    if (codes.style.display === "none"){
+		codes.style.display = "block";
+	}
+    else {
+        codes.style.display = "none"}
+}
 
 function copyToClipboard() {
 	const str = document.getElementById('kodok').innerText
