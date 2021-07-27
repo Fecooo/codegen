@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 body {
-    background-color: wheat;
+    background-color: rgb(19, 19, 19);
     font-family: 'Roboto', sans-serif;
 }
 p {
     text-align: center;
+    color: rgb(212, 211, 211);
 }
 button {
     font-family: 'Roboto', sans-serif;
@@ -16,16 +17,17 @@ button {
     width: 250px;
     height: 40px;
     background-color: black;
-    color: white;
+    color: rgb(212, 211, 211);
     transition-duration: 0.75s;
 }
 button:hover {
-    background-color: white;
+    background-color: rgb(212, 211, 211);
     color: black;
     cursor: pointer;
 }
 #focim, #info {
     text-align: center;
+    color: rgb(212, 211, 211);
 }
 
 #tablazat{
@@ -35,7 +37,12 @@ button:hover {
     padding: 0;*/
     margin-left: auto;
     margin-right: auto;
+    color: rgb(212, 211, 211);
 }
 .sor {
+    text-align: center;
+}
+#sor1 {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
