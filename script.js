@@ -34,7 +34,7 @@ function auto() {
     }
 }
 
-function display() {
+/*function display() {
 	var codes = document.getElementById('kodok');
 
     if (codes.style.display === "none"){
@@ -42,7 +42,7 @@ function display() {
 	}
     else {
         codes.style.display = "none"}
-}
+}*/
 
 function copyToClipboard() {
 	const str = document.getElementById('kodok').innerText
