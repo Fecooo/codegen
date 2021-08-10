@@ -15,6 +15,16 @@
 
 <body>
     <h1 id="focim">20 CHARACTERS <br> CODE GENERATOR</h1>
+        <!--<div style="display: inline;">
+            <p>Pieces:</p>
+            <select name="Pieces" id="pieces" onchange="drawStuff(this)">
+                <option value="tiz">10</option>
+                <option value="otven">50</option>
+                <option value="szaz">100</option>
+                <option value="ketszazotven">250</option>
+                <option value="otszaz">500</option>
+            </select>
+        </div>-->
     <h3>
         <table id="tablazat">
             <thead>
@@ -101,14 +111,15 @@
             </tbody>
         </table>
     </h3>
-    <p id="realTime">Your codes will look this: _____-_____-_____-_____</p>
+    <button onclick="random(), realTimeCode()" class="animatedbtn">RANDOM CODE</button>
+    <p id="realTime">Your codes will look this: <span id="codePreview">_____-_____-_____-_____</span></p>
     <h5 id="info">MUST BE SELECTED SOMETHING IN ALL COLUMNS TO GENERATE THE RIGHT CODES</h3><!--<br>-->
-        <button onclick="generate(), auto(), copyToClipboard(kodok)">GENERATE & COPYING CODES</button>
+        <button onclick="generate(), auto(), copyToClipboard(kodok)" class="animatedbtn">GENERATE & COPYING CODES</button>
         <!--<br><button onclick="display()">SHOW AND HIDE CODES</button>
         <br>-->
         <!--<button onclick="copyToClipboard(kodok)">COPYING CODES</button>-->
         <p id="kodok"></p>
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
