@@ -1,5 +1,5 @@
-var betuk = "ABCDEFGHJKLMNPQRSTUVWXYZ"
-var szamok = "23456789"
+var betuk = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var szamok = "0123456789"
 var resz = ""
 
 function generate() {
@@ -44,18 +44,88 @@ function random() {
     }
 }
 
-/*function display() {
-    var codes = document.getElementById('kodok');
-
-    if (codes.style.display === "none") {
-        codes.style.display = "block";
+function pieces_text() {
+    let genszam = "Number of codes to generate: ";
+    var a = document.getElementById("010").value;
+    var b = document.getElementById("050").value;
+    var c= document.getElementById("0100").value;
+    var d = document.getElementById("0250").value;
+    var e = document.getElementById("0500").value;
+    document.getElementById("darabszamspan").style.color = "rgb(64, 197, 241)";
+    document.getElementById("darabszamspan").style.fontWeight = "bold";
+    for (j = 0; j < 1; j++) {
+        if (document.getElementById("010").checked) {
+            document.getElementById("darabszam").innerHTML = `<h4 id="darabszam">${genszam}<span id="darabszamspan" style="color: rgb(64, 197, 241);">${a}</span>`;
+        } else if (document.getElementById("050").checked) {
+            document.getElementById("darabszam").innerHTML = `<h4 id="darabszam">${genszam}<span id="darabszamspan" style="color: rgb(64, 197, 241);">${b}</span>`;
+        } else if (document.getElementById("0100").checked) {
+            document.getElementById("darabszam").innerHTML = `<h4 id="darabszam">${genszam}<span id="darabszamspan" style="color: rgb(64, 197, 241);">${c}</span>`;
+        } else if (document.getElementById("0250").checked) {
+            document.getElementById("darabszam").innerHTML = `<h4 id="darabszam">${genszam}<span id="darabszamspan" style="color: rgb(64, 197, 241);">${d}</span>`;
+        } else if (document.getElementById("0500").checked) {
+            document.getElementById("darabszam").innerHTML = `<h4 id="darabszam">${genszam}<span id="darabszamspan" style="color: rgb(64, 197, 241);">${e}</span>`;
+        }
     }
-    else {
-        codes.style.display = "none"
+    /*document.getElementById("darabszam").innerHTML = `<h4 id="darabszam">${genszam}<span id="darabszamspan" style="color: rgb(64, 197, 241);">${x}</span>`;*/
+}
+
+function pieces() {
+    for (j = 0; j < 1; j++) {
+        if (document.getElementById("010").checked) {
+            document.getElementById("kodok").innerHTML = "";
+            for (let i = 0; i < 10; i++) {
+                auto();
+                document.getElementById("kodok").innerHTML += resz + "<br>";
+            }
+        } else if (document.getElementById("050").checked) {
+            document.getElementById("kodok").innerHTML = "";
+            for (let i = 0; i < 50; i++) {
+                auto();
+                document.getElementById("kodok").innerHTML += resz + "<br>";
+            }
+        } else if (document.getElementById("0100").checked) {
+            document.getElementById("kodok").innerHTML = "";
+            for (let i = 0; i < 100; i++) {
+                auto();
+                document.getElementById("kodok").innerHTML += resz + "<br>";
+            }
+        } else if (document.getElementById("0250").checked) {
+            document.getElementById("kodok").innerHTML = "";
+            for (let i = 0; i < 250; i++) {
+                auto();
+                document.getElementById("kodok").innerHTML += resz + "<br>";
+            }
+        } else if(document.getElementById("0500").checked) {
+            document.getElementById("kodok").innerHTML = "";
+            for (let i = 0; i < 500; i++) {
+                auto();
+                document.getElementById("kodok").innerHTML += resz + "<br>";
+            }
+        }
+    }
+}
+
+function copyToClipboard() {
+    const cb = navigator.clipboard;
+    const paragraph = document.getElementById('kodok');
+    cb.writeText(paragraph.innerText).innerHTML = kodok;
+}
+
+
+
+
+
+/*function test() {
+    if (document.getElementById(tiz).checked) {
+        document.getElementById("kodok").innerHTML = "";
+        for (let i = 0; i < 10; i++) {
+            auto();
+            document.getElementById("kodok").innerHTML += resz + "<br>";
+        }
     }
 }*/
 
-function copyToClipboard() {
+/*function copyToClipboard() {
     const str = document.getElementById('kodok').innerText
     const el = document.createElement('textarea')
     el.value = str
@@ -66,4 +136,15 @@ function copyToClipboard() {
     el.select()
     document.execCommand('copy')
     document.body.removeChild(el)
-}
+}*/
+
+/*function display() {
+    var codes = document.getElementById('kodok');
+
+    if (codes.style.display === "none") {
+        codes.style.display = "block";
+    }
+    else {
+        codes.style.display = "none"
+    }
+}*/

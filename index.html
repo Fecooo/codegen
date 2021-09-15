@@ -15,18 +15,36 @@
 
 <body>
     <h1 id="focim">20 CHARACTERS <br> CODE GENERATOR</h1>
-        <!--<div style="display: inline;">
+        <div style="display: inline;">
             <p>Pieces:</p>
-            <select name="Pieces" id="pieces" onchange="drawStuff(this)">
-                <option value="tiz">10</option>
-                <option value="otven">50</option>
-                <option value="szaz">100</option>
-                <option value="ketszazotven">250</option>
-                <option value="otszaz">500</option>
-            </select>
-        </div>-->
+            <!--<select name="Pieces" id="pieces" onchange="pieces()">
+                <option value="10" onchange="generate10()" id="tiz">10</option>
+                <option value="50" onchange="generate500()">50</option>
+                <option value="100">100</option>
+                <option value="250">250</option>
+                <option value="500">500</option>
+            </select>-->
+            <table class="tablazat">
+                <tr>
+                    <td>10</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>250</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gen" class="gen" id="010" value="10" onclick="pieces_text()"></td>
+                    <td><input type="radio" name="gen" class="gen" id="050" value="50" onclick="pieces_text()"></td>
+                    <td><input type="radio" name="gen" class="gen" id="0100" value="100" onclick="pieces_text()"></td>
+                    <td><input type="radio" name="gen" class="gen" id="0250" value="250" onclick="pieces_text()"></td>
+                    <td><input type="radio" name="gen" class="gen" id="0500" value="500" onclick="pieces_text()"></td>
+                </tr>
+            </table>
+            <h3 id="darabszam">Number of codes to generate:<span id="darabszamspan" style="color: rgb(64, 197, 241);"> __</span></h3>
+        </div>
+        <hr style="width: 45%;">
     <h3>
-        <table id="tablazat">
+        <table class="tablazat">
             <thead>
                 <tr id="sor1">
                     <td width="100px"></td>
@@ -114,7 +132,7 @@
     <button onclick="random(), realTimeCode()" class="animatedbtn">RANDOM CODE</button>
     <p id="realTime">Your codes will look this: <span id="codePreview">_____-_____-_____-_____</span></p>
     <h5 id="info">MUST BE SELECTED SOMETHING IN ALL COLUMNS TO GENERATE THE RIGHT CODES</h3><!--<br>-->
-        <button onclick="generate(), auto(), copyToClipboard(kodok)" class="animatedbtn">GENERATE & COPYING CODES</button>
+        <button onclick="/*generate500(), generate(),*/ auto(), pieces(), copyToClipboard(kodok)" class="animatedbtn">GENERATE & COPYING CODES</button>
         <!--<br><button onclick="display()">SHOW AND HIDE CODES</button>
         <br>-->
         <!--<button onclick="copyToClipboard(kodok)">COPYING CODES</button>-->

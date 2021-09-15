@@ -4,7 +4,7 @@ body {
     background-color: rgb(19, 19, 19);
     font-family: 'Roboto', sans-serif;
 }
-p {
+p, #kodok {
     text-align: center;
     color: rgb(212, 211, 211);
 }
@@ -25,15 +25,15 @@ button:hover {
     color: black;
     cursor: pointer;
 }*/
-#focim, #info {
+#focim, #info, #darabszam {
     text-align: center;
     color: rgb(212, 211, 211);
 }
-#tablazat{
-    /*text-align: center;
-    display: block;
+.tablazat{
+    /*display: block;
     margin: auto;
     padding: 0;*/
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     color: rgb(212, 211, 211);
@@ -55,6 +55,18 @@ button:hover {
     text-align: center;
     display: block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .animatedbtn {
