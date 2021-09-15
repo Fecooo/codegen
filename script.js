@@ -1,5 +1,5 @@
 var betuk = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-var szamok = "0123456789"
+var szamok = "23456789"
 var resz = ""
 
 function generate() {
