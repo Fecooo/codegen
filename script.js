@@ -1,4 +1,4 @@
-var betuk = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var betuk = "ABCDEFGHJKLMNPQRSTUVWXYZ"
 var szamok = "23456789"
 var resz = ""
 
