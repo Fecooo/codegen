@@ -31,23 +31,28 @@
                     <td>100</td>
                     <td>250</td>
                     <td>500</td>
+                    <td>1000</td>
+                    <td>2500</td>
                 </tr>
                 <tr>
                     <td><input type="radio" name="gen" class="gen" id="010" value="10" onclick="pieces_text()"></td>
                     <td><input type="radio" name="gen" class="gen" id="050" value="50" onclick="pieces_text()"></td>
                     <td><input type="radio" name="gen" class="gen" id="0100" value="100" onclick="pieces_text()"></td>
                     <td><input type="radio" name="gen" class="gen" id="0250" value="250" onclick="pieces_text()"></td>
-                    <td><input type="radio" name="gen" class="gen" id="0500" value="500" onclick="pieces_text()"></td>
+                    <td><input type="radio" name="gen" class="gen" id="0500" value="500" onclick="pieces_text()" checked="checked"></td>
+                    <td><input type="radio" name="gen" class="gen" id="01000" value="1000" onclick="pieces_text()"></td>
+                    <td><input type="radio" name="gen" class="gen" id="02500" value="2500" onclick="pieces_text()"></td>
                 </tr>
             </table>
-            <h3 id="darabszam">Number of codes to generate:<span id="darabszamspan" style="color: rgb(64, 197, 241);"> __</span></h3>
+            <h3 id="darabszam">Number of codes to generate:<span id="darabszamspan" style="color: rgb(64, 197, 241);"> 500</span></h3>
         </div>
         <hr style="width: 45%;">
     <h3>
+        <div id="flip-scroll"> 
         <table class="tablazat">
             <thead>
-                <tr id="sor1">
-                    <td width="100px"></td>
+                <tr id="sor">
+                    <td width="100px">PLACE</td>
                     <td>1</td>
                     <td>2</td>
                     <td>3</td>
@@ -128,6 +133,7 @@
                 </tr>
             </tbody>
         </table>
+        </div>
     </h3>
     <button onclick="random(), realTimeCode()" class="animatedbtn">RANDOM CODE</button>
     <p id="realTime">Your codes will look this: <span id="codePreview">_____-_____-_____-_____</span></p>

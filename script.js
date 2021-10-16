@@ -51,6 +51,8 @@ function pieces_text() {
     var c= document.getElementById("0100").value;
     var d = document.getElementById("0250").value;
     var e = document.getElementById("0500").value;
+    var f = document.getElementById("01000").value;
+    var g = document.getElementById("02500").value;
     document.getElementById("darabszamspan").style.color = "rgb(64, 197, 241)";
     document.getElementById("darabszamspan").style.fontWeight = "bold";
     for (j = 0; j < 1; j++) {
@@ -64,6 +66,10 @@ function pieces_text() {
             document.getElementById("darabszam").innerHTML = `<h4 id="darabszam">${genszam}<span id="darabszamspan" style="color: rgb(64, 197, 241);">${d}</span>`;
         } else if (document.getElementById("0500").checked) {
             document.getElementById("darabszam").innerHTML = `<h4 id="darabszam">${genszam}<span id="darabszamspan" style="color: rgb(64, 197, 241);">${e}</span>`;
+        } else if (document.getElementById("01000").checked) {
+            document.getElementById("darabszam").innerHTML = `<h4 id="darabszam">${genszam}<span id="darabszamspan" style="color: rgb(64, 197, 241);">${f}</span>`;
+        } else if (document.getElementById("02500").checked) {
+            document.getElementById("darabszam").innerHTML = `<h4 id="darabszam">${genszam}<span id="darabszamspan" style="color: rgb(64, 197, 241);">${g}</span>`;
         }
     }
     /*document.getElementById("darabszam").innerHTML = `<h4 id="darabszam">${genszam}<span id="darabszamspan" style="color: rgb(64, 197, 241);">${x}</span>`;*/
@@ -98,6 +104,18 @@ function pieces() {
         } else if(document.getElementById("0500").checked) {
             document.getElementById("kodok").innerHTML = "";
             for (let i = 0; i < 500; i++) {
+                auto();
+                document.getElementById("kodok").innerHTML += resz + "<br>";
+            }
+        } else if(document.getElementById("01000").checked) {
+            document.getElementById("kodok").innerHTML = "";
+            for (let i = 0; i < 1000; i++) {
+                auto();
+                document.getElementById("kodok").innerHTML += resz + "<br>";
+            }
+        } else if(document.getElementById("02500").checked) {
+            document.getElementById("kodok").innerHTML = "";
+            for (let i = 0; i < 2500; i++) {
                 auto();
                 document.getElementById("kodok").innerHTML += resz + "<br>";
             }
